@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nicholis Fowler</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+	
+
+</head>
+<body>
+
+<!-- Landing -->
+<div class="background">
+<div id="landingimg">
+	<div class="shader">
+		<div id="landing-container">
+			<h1 class="fall-animation">NICK <br>FOWLER </h1>
+			<div class="socials">
+				<a href="https://twitter.com/nickolitesla_" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/nickolitesla/" target="_blank" class="fa fa-instagram"></a>
+			</div>
+			<div id="arrow-container">
+				<div class="arrow" onclick="document.getElementById('skills').scrollIntoView()"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Navbar -->
+<nav class="desktop">
+	<div class="nav-container">
+		<img src="imgs/logo.png" alt="logo">
+		<input type="button" name="Home" value="Home" id="Home" onclick="document.getElementById('landingimg').scrollIntoView();">
+		<input type="button" name="Skills" value="Skills" id="Skills" onclick="document.getElementById('skills').scrollIntoView();" />
+		<input type="button" name="Projects" value="Projects" id="Projects" onclick="document.getElementById('projects').scrollIntoView();"/>
+		<input type="button" value="About" id="About" onclick="document.getElementById('about').scrollIntoView();" name="About"/>
+		<input type="button" name="Contact" value="Contact" id="Contact" onclick="document.getElementById('contact').scrollIntoView();"/>
+	</div>
+</nav> 
+
+<!-- Hamburger Nav -->
+
+<nav class="nav-hamburger-container">
+	<input type="button" name="Home" id="Home" value="Nick Fowler" onclick="document.getElementById('landingimg').scrollIntoView();" class="nav-link">
+	<ul class="nav-menu">
+		<li class="nav-item">
+			<input type="button" name="Skills" id="Skills" value="Skills" onclick="document.getElementById('skills').scrollIntoView();" class="nav-link">
+		</li>
+		<li class="nav-item">
+			<input type="button" name="Projects" id="Projects" value="Projects" onclick="document.getElementById('projects').scrollIntoView();" class="nav-link">
+		</li>
+		<li class="nav-item">
+			<input type="button" name="About" id="About" value="About" onclick="document.getElementById('about').scrollIntoView();" class="nav-link">
+		</li>
+		<li class="nav-item">
+			<input type="button" name="Contact" id="Contact" value="Contact" onclick="document.getElementById('contact').scrollIntoView();" class="nav-link">
+		</li>
+	</ul>
+	<div class="hamburger">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</div>
+</nav>
+
+
+<!-- Skills -->
+<div class="card">
+	<div id="skills">
+		<h1>SKILLS</h1>
+		<div id="skillsimgs">
+			<img src="imgs/html.png" alt="html logo">
+			<img src="imgs/css3.png" alt="css3 logo">
+			<img src="imgs/javascript.png" alt="javascript logo">
+			<img src="imgs/python.png" alt="python logo">
+			<img src="imgs/github.png" alt="github logo">
+			<img src="imgs/java.png" alt="java logo">
+			<img src="imgs/linux.png" alt="linux logo">
+			<img src="imgs/mysql.png" alt="mysql logo">
+			<img src="imgs/flask.png" alt="flask logo">
+			<img src="imgs/php.png" alt="php logo">
+			<img src="imgs/bootstrap.png" alt="bootstrap logo">
+			<img src="imgs/csharp.png" alt="csharp logo">
+			<img src="imgs/illustrator.png" alt="illustrator logo">
+		</div>
+	</div>
+</div>
+
+<!-- passing -->
+<div class="card">
+	<div class="shader">
+		<div class="passing">
+			<h1 id="passingleft" style="float: left">I create <em style="color: #1e66b8;">fresh</em> <br><em>intuitive</em> <br> <em style="color: #ba1e68;">marketable</em><br>applications</h1>
+			<h1 id="passingright" style="float: right;">for the<em id="universe"> universe</em>.</h1>
+		</div>
+	</div>
+</div>
+
+<!-- Projects --> 
+<div class="card">
+		<div id="projects">
+			<h1>PROJECTS</h1>
+				<div id="projects-card">
+					<!-- add projects here -->
+					<!-- Task Tracker --> 
+					<h2>React Task Tracker</h2>
+					<div class="img-wrapper">	
+						<figure>
+							<img src="imgs/task-tracker.png" alt="task tracker app">
+							<a href="/task-tracker"><figcaption>
+								This is a react app that allows you to add and delete different tasks.
+							</figcaption></a>
+						</figure>
+					</div>
+					<h2>EPIC Daily Earth Pictures</h2>
+					<div class="img-wrapper">
+						<figure>
+							<img src="imgs/earthsite.png" alt="daily pic earth website">
+							<a href="sites/earthsite/"><figcaption>
+								Daily Earth Pictures is a website I created to hone my skills in API interaction and to create a website that shows you daily pictures of earth taken from NASA's Epic camera onboard the NOAA DSCVR spacecraft.
+							</figcaption></a>
+						</figure>
+					</div>
+
+					<h2>CSS Zen Garden</h2>	
+					<div class="img-wrapper">	
+						<figure>
+							<img src="imgs/zen-garden.png" alt="zen garden sample image">
+							<a href="downloads/CSS%20Zen%20Garden.zip" download="downloads/CSS Zen Garden.zip"><figcaption>CSS Zen Garden is a website to showcase CSS skills by only changing the CSS of a provided file and none of the HTML. I chose to create a marble styled page to catch peoples eye. This website is not live as of now but I have provided the zip file containing the website.</figcaption></a>	
+						</figure>
+					</div>
+					<h2>Blend Colors With PHP</h2>
+					<div class="img-wrapper">
+						<figure>
+							<img src="imgs/blend.png" alt="blend colors sample image">
+							<a href="downloads/blend.php" download="downloads/blend.php"><figcaption>The objective of the Blend.php application was to take an array of hex colors and blend them together. I have provided the .php file. However, to run this it is necessary you use a server such as XAMPP and throw blend.php in the htdocs directory.</figcaption></a>
+						</figure>
+					</div>
+					
+				</div>
+		</div>
+</div>
+
+<!-- About -->
+<div class="shader">
+	<div class="card">
+		<div id="about">
+			<h1>WHO AM I?</h1>
+			<img src="imgs/profile.jpg" alt="profile image">
+			<div id="abouttext">
+				<p>My name is Nicholis, but I go by Nick. I am a Full-Stack developer excited to start my career. I grew up in Alma, MI which, if you do the classic Michigander gesture (holding up your hand like a mitten), Alma is smack-dab in the middle. Though Alma was nice, I decided I was in need of a fresh perspective so after a lot of thought, I decided to move to Austin, TX.</p>			
+				<p>While living in Michigan, I went Alma High School where I was heavily involved with my Robotics team. My role was Lead Software Developer where I coded all the autonoumous and teleoperated functions of the robot.</p>
+				<p>After high school I contiued my education by attending Alma College for a Bachelors in Computer Science. During my college career I was part of the Rock Climbing Club, <a href="bpa.org" target="_blank">Business Professionals of America Chapter (BPA)</a>, and part of the Zeta Sigma fraternity.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contact -->
+<div class="shader">
+	<div class="card">
+		<div id="contact">
+			<h1>CONTACT ME</h1>
+			<div id="contactform">
+			
+				<form action="https://getform.io/f/6999b2e5-6e9a-4c14-84f2-d154011596a4" method="POST">
+					<input type="text" name="firstName"  placeholder="First Name">
+					<input type="text" name="lastName" placeholder="Last Name">
+					<input type="email" name="email" placeholder="Email">
+					<input type="tel" name="phone" placeholder="Phone Number">
+					<input type="text" name="company" placeholder="Company / Organization">
+					<br>
+					<label>Tell me about your business or scope of the project you would like done!</label>
+					<br>
+					<textarea placeholder="Type here..."></textarea>
+					<div id="submitbtn">
+						<input type="submit" name="submit">
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script language="JavaScript" type="text/javascript" src="scripts/index.js"></script>
+<script language="JavaScript" type="text/javascript" src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+:root{
+    --background-color: black;
+    --card-background-color: white;
+    --card-boxshadow:  lightblue;
+;
+}
+
+body{
+    background: var(--background-color);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+
+#header{
+    padding: 0 auto;
+
+}
+
+h1{
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+
+}
+
+#grid-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    align-items: center;
+}
+
+
+.content{
+    vertical-align: middle;
+    padding-left: 1rem;
+    font-size: 1.8vw;
+    height: 100%;
+}
+
+.content.left{
+    text-align: right;
+}
+
+#caption{
+    vertical-align: middle;
+    font-size: 1.5vw;
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / span 2;
+    align-self: end;
+}
+
+.content:nth-child(-n+2){
+    padding-top: 1rem;
+}
+
+
+.content-container{
+    display: grid;
+    grid-template-columns: .5fr  1fr;
+    width: 80%;
+    height: 80%;
+    color: white;
+    background-color: rgb(21, 25, 26);
+    margin: 0 auto;
+    border: 0px solid rgb(142, 187, 231);
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(152, 187, 223);
+    
+}
+
+.slideshow-container{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    float: left;
+    padding-left: 1em;
+}
+
+.mySlides {
+    color: white;
+    font-size: 1.5rem;
+    max-height: 80vh;
+}
+
+.mySlides img{
+    max-height: inherit;
+}
+
+.prev, .next{
+    color: white;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 14px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    position: absolute;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
