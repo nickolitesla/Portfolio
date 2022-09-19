@@ -3,6 +3,7 @@
 	--secondary-raw: 177,221,241;
 	--accent: rgb(95,117,142);
 	--accent-raw: 95,117,142;
+	--content-width: 50vw;
 }
 
 html{
@@ -372,7 +373,7 @@ nav{
 	padding-top: 2rem;
 	justify-content: space-around;
 	gap: 30px;
-	max-width: 700px;
+	max-width: var(--content-width);
 	margin: 0 auto;
 
 }
@@ -394,12 +395,14 @@ nav{
 	background-repeat: no-repeat;
 	background-position:  right;
 	background-size: 16vw;
-	max-width: 700px;
+	max-width: var(--content-width);
 	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .passing h1{
-	display: inline-block;
 	width: 50%;
 	font-family: 'Roboto Slab';
 	text-transform: uppercase;
@@ -410,15 +413,11 @@ nav{
 #passingleft{
 
 	text-align: right;
-	margin: 40vh 0 0 0;
 	border-right: 10px solid var(--secondary);
 	padding-right: 20px;
-	width: 47%;
 }
 
 #passingright{
-	width: 47%;
-	margin: 46vh 0px 0 10px;
 	text-align: left;
 	color:  white;
 	text-shadow: -10px 10px 3px black;
@@ -560,7 +559,7 @@ nav{
 }
 
 #abouttext{
-	max-width: 700px;
+	width: var(--content-width);
 	margin: 0 auto;
 	line-height: 2rem;
 }
@@ -616,6 +615,8 @@ nav{
 #contact{
 	height:  max-content;
 	min-height: 100vh;
+	margin: 0 auto;
+	width: var(--content-width);
 }
 
 #contact h1{
@@ -631,12 +632,11 @@ nav{
 	display: block;
 	margin: 1em auto;
 	height: max-content;
-	max-width: 800px;
 }
 
 #contactform input, label, textarea{
 	border: 1px var(--accent) solid;
-	width: 80%;
+	width: 100%;
 	display: block;
 	margin: 1em auto;
 	height: 40px;
