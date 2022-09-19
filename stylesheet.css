@@ -3,7 +3,7 @@
 	--secondary-raw: 177,221,241;
 	--accent: rgb(95,117,142);
 	--accent-raw: 95,117,142;
-	--content-width: 50vw;
+	--content-width: 70vw;
 }
 
 html{
@@ -475,7 +475,7 @@ nav{
 
 #projects-card{
 	display: grid;
-	width: 70%;
+	width: var(--content-width);
 	margin: 0 auto;
 	padding: 3rem 0;
 	grid-template-columns: 1fr 1fr;
