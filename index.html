@@ -49,7 +49,6 @@
 </nav> 
 
 <!-- Hamburger Nav -->
-
 <nav class="nav-hamburger-container">
 	<input type="button" name="Home" id="Home" value="Nick Fowler" onclick="document.getElementById('landingimg').scrollIntoView();" class="nav-link">
 	<ul class="nav-menu">
@@ -112,41 +111,63 @@
 			<h1>PROJECTS</h1>
 				<div id="projects-card">
 					<!-- add projects here -->
-					<!-- Task Tracker --> 
-					<h2>React Task Tracker</h2>
-					<div class="img-wrapper">	
-						<figure>
-							<img src="imgs/task-tracker.png" alt="task tracker app">
-							<a href="/task-tracker"><figcaption>
-								This is a react app that allows you to add and delete different tasks.
-							</figcaption></a>
-						</figure>
-					</div>
-					<h2>EPIC Daily Earth Pictures</h2>
-					<div class="img-wrapper">
-						<figure>
-							<img src="imgs/earthsite.png" alt="daily pic earth website">
-							<a href="sites/earthsite/"><figcaption>
-								Daily Earth Pictures is a website I created to hone my skills in API interaction and to create a website that shows you daily pictures of earth taken from NASA's Epic camera onboard the NOAA DSCVR spacecraft.
-							</figcaption></a>
-						</figure>
+
+					<!-- TOPdesk Notify-->
+					<div class="project-wrapper">
+						<img src="imgs/Topdesk Notify.png" alt="topdesk notify app">
+						<a target="_blank" href="https://github.com/nickolitesla/TOPdesk-Notify">
+							This is a nodejs app that allows you to send notifications to your teams when a ticket is created in TOPdesk. Tech utilized: Nodejs, teamsfx, restify, and axios. 
+						</a>
+						<div class="title-container">
+							<h2>TOPdesk Notify</h2>
+						</div>
+
 					</div>
 
-					<h2>CSS Zen Garden</h2>	
-					<div class="img-wrapper">	
-						<figure>
-							<img src="imgs/zen-garden.png" alt="zen garden sample image">
-							<a href="downloads/CSS%20Zen%20Garden.zip" download="downloads/CSS Zen Garden.zip"><figcaption>CSS Zen Garden is a website to showcase CSS skills by only changing the CSS of a provided file and none of the HTML. I chose to create a marble styled page to catch peoples eye. This website is not live as of now but I have provided the zip file containing the website.</figcaption></a>	
-						</figure>
+					<!-- Virtual Receptionist -->
+					<div class="project-wrapper">
+						<img src="imgs/virtual receptionist.png" alt="virtual receptionist app">
+						<a href="#" onclick="return false">
+							This is a powerapps app that allows visitors to checkin and out of the office while also alerting the employee that their visitor has arrived via teams and email. Also keeps a log of all visitors and their checkin/out times. 
+						</a>
+						<div class="title-container">
+							<h2>Virtual Receptionist</h2>
+						</div>
 					</div>
-					<h2>Blend Colors With PHP</h2>
-					<div class="img-wrapper">
-						<figure>
-							<img src="imgs/blend.png" alt="blend colors sample image">
-							<a href="downloads/blend.php" download="downloads/blend.php"><figcaption>The objective of the Blend.php application was to take an array of hex colors and blend them together. I have provided the .php file. However, to run this it is necessary you use a server such as XAMPP and throw blend.php in the htdocs directory.</figcaption></a>
-						</figure>
+
+					<!-- Task Tracker --> 
+					<div class="project-wrapper">	
+						
+						<img src="imgs/task-tracker.png" alt="task tracker app" >
+						<a href="#" onclick="return false">
+							This is a react app that allows you to add and delete different tasks.
+						</a>
+						<div class="title-container">
+							<h2>React Task Tracker</h2>
+						</div>
 					</div>
 					
+					<!-- Earth Site --> 
+					<div class="project-wrapper">
+						
+							<img src="imgs/earthsite.png" alt="daily pic earth website">
+							<a target="_blank" href="sites/earthsite/">
+								Daily Earth Pictures is a website I created to hone my skills in API interaction and to create a website that shows you daily pictures of earth taken from NASA's Epic camera onboard the NOAA DSCVR spacecraft.
+							</a>
+							<div class="title-container">
+								<h2>EPIC Daily Earth Pictures</h2>
+							</div>
+					</div>
+
+					<!-- Zen Garden -->
+					<div class="project-wrapper">	
+						
+							<img src="imgs/zen-garden.png" alt="zen garden sample image" />
+							<a href="downloads/CSS%20Zen%20Garden.zip" download="downloads/CSS Zen Garden.zip">CSS Zen Garden is a website to showcase CSS skills by only changing the CSS of a provided file and none of the HTML. I chose to create a marble styled page to catch peoples eye. This website is not live as of now but I have provided the zip file containing the website.</a>	
+							<div class="title-container">
+								<h2>CSS Zen Garden</h2>
+							</div>
+					</div>
 				</div>
 		</div>
 </div>
